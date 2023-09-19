@@ -1,24 +1,15 @@
-import './App.css'
-import Componente1 from './components/componente1'
-import Componente2 from './components/Compenente2'
+import './App.scss'
+import Header from './components/Header'
+import Footer from './components/Footer'
+import ConteudoPrincipal from './components/ConteudoPrincipal'
 
 function App() {
 
-  const paragr = {
-    color: 'blue',
-    textAlign: 'Justify',
-    fontSize: '1.5em'
-
-  }
-
   return (
     <>
-      <div className='div-app'>
-        <h1 style={{color: 'red', fontSize: '3em'}}>Introdução React</h1>
-      </div>
-        <p style={paragr}>Primeiro teste</p> 
-        <Componente1/>
-        <Componente2/>
+      <Header/>
+      <ConteudoPrincipal/>
+      <Footer/>   
     </>
     
   )
